@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Wellfleet&display=swap');
+:root {
+    --primary: #ffd43d;
+    --primary1: #f6a1b3;
+    --light: #323232;
+    --dark: #06c105;
+    --dark2: #c9a78d;
+  }
+
+body {
+    background-color: #f6a1b3;
+    ;
+}
+
+h1 {
+    color: #fff9fb;
+    font-family: "Poetsen One";
+    font-size: 250px;
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #323232;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: o.4s;
+  }
+
+  .hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--primary);
+    transition: 0.5s;
+  }
+
+  .hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+    transition: 0.5s;
+  }
+
+  .hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translate(15px);
+    transition: 0.5s;
+  }
+
+  .hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+    transition: 0.5s;
+  }
+
+  .hamburger.is-active span {
+    background-color: var(--primary);
+    transition: 0.5s;
+  }
+
+  .hamburger.is-active:hover span {
+    background-color: var(--primary);
+  }
+  
+  .sidebar {
+    flex: 1 1 0;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: var(--dark);
+  }
+  
+  .sidebar h1 {
+    color: var(--primary);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
+  
+  .sidebar .menu {
+    margin: 0 -1rem;
+  }
+  
+  .sidebar .menu .menu-item {
+    display: block;
+    font-weight: 700;
+    padding: 1em;
+    color: var(--light);
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+  
+  .sidebar .menu .menu-item:hover,
+  .sidebar .menu .menu-item.is-active {
+    color: var(--dark);
+    font-weight: 700;
+    background: var(--primary);
+    border-radius: 10px;
+  }
+  
+  .sidebar .menu .menu-item:hover {
+    border-right: 8px;
+    border-radius: 10px;
+  }
+
+.menu{  
+    width: 85vw;
+    background-color: #fff9fb;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    padding: 1em;
+}
+.menu_item{
+    background-color: #323232;
+    text-decoration: none;
+    border-radius: 10em;
+    padding: 0.5em;
+}
+
+.menu_item{
+    font-family: "Poetsen One";
+    color: #fff9fb;
+    background-color: #323232;
+    text-decoration: none;
+    border-radius: 10em;
+    padding: 0.5em;
+    margin: 0em 2em;
+}
+
+.menu_item_active{
+    font-family: "Poetsen One";
+    color: #fff9fb;
+    background-color: #323232;
+    text-decoration: none;
+    border-radius: 10em;
+    padding: 0.5em;
+}
+
+.main_txt {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.main_txt h1 {
+    color: #fff9fb;
+    font-family: "Poetsen One";
+    font-size: 15em;
+}
+
+spline-viewer {
+    width: 100%;
+    position: absolute;
+    margin-left: 20vw;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .content {
+      padding-top: 8rem;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      height: 100vh;
+      width: 100%;
+      max-width: 300px;
+      transition: 0.2s linear;
+    }
+  
+    .sidebar.is-active {
+      left: 0;
+    }
+  }
