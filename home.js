@@ -1,4 +1,4 @@
-const menu_toggle = document.querySelector('.menu-toggle');
+const menu_toggle = document.querySelector('.nav-toggle');
 const sidebar = document.querySelector('.sidebar');
 
 menu_toggle.addEventListener('click', () => {
