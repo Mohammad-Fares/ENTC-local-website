@@ -19,9 +19,33 @@
     </div>
 
     <div class="head">
-        <h1>PRE-ORDER</h1>
+        <h1 class="h11">PRE-ORDER</h1><br>
         <p>For pre-order enquiries, please fill out the form below or contact us. For more information, visit our</p>
         <a href="FAQ.html">FAQ page.</a>
+        <div class="form">
+            <h1 class="h12">Order form</h1><br>
+            <label for="fname">FULL NAME</label><br>
+            <input type="text" id="fname" placeholder="Full name"><br>
+            <label for="email">EMAIL *</label><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <label for="mobile">MOBILE</label><br>
+            <input type="tel" id="mobile" placeholder="Mobile Number"><br>
+            <label for="store">STORE</label><br>
+            <select name="cars" id="store" aria-placeholder="Choose an option">
+                <option value="mac">MACARTHUR SQUARE SHOPPING CENTRE</option>
+                <option value="world">WORLD SQUARE - COMING SOON</option>
+                <option value="oran">ORAN PARK - OPENING MARCH 2024</option>
+            </select><br>
+
+            <div class="details">
+                <label for="date" id="date">PICKUP DATE</label>
+                <label for="pickup" id="pickup">PICKUP LOCATION</label>
+                <input type="date" id="date_ent">
+                <input type="number" id="pickup_ent">
+            </div>
+            <label for="order">ORDER DETAILS</label><br>
+            <input type="text" id="order" placeholder="Please include details on order request such as number of servings, custom colours and designs. "><br>
+        </div>
     </div>
 
 
