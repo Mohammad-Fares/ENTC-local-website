@@ -57,11 +57,6 @@
     background-color: #f6a1b3;
   }
 
-.menu_item:hover, .menu_item_active:hover{
-    color: #323232;
-    background-color: #f6a1b3;
-  }
-
 .menus{
     margin-top: 8vh;
     display: grid;
