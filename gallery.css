@@ -6,6 +6,7 @@
     --dark: #06c105;
     --dark2: #c9a78d;
   }
+  
 *{
     background-color: #f6a1b3;
     width: 100%;
@@ -55,7 +56,4 @@
 .menu_item:hover, .menu_item_active:hover{
     color: #323232;
     background-color: #f6a1b3;
-  }
-
-@media (max-width: 430px) {
   }

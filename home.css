@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Signika:wght@300..700&family=Wellfleet&display=swap');
 :root {
     --primary: #ffd43d;
     --primary1: #f6a1b3;
@@ -6,46 +6,38 @@
     --dark: #06c105;
     --dark2: #c9a78d;
   }
-html, 
-body {
+*{
     background-color: #f6a1b3;
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    color: #fff9fb;
-    font-family: "Poetsen One";
-    font-size: 250px;
-}
-
 .nav{  
     display: block;
-    width: 40vw;
+    width: 45vw;
+    height: 2vh;
     background-color: #fff9fb;
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
+    left: 25%;
+    top: 0;
     text-align: center;
     border-radius: 50px;
     padding: 1em;
-    z-index: 2;
     margin-top: 0.5em;
 }
 
 .menu_item{
-  display: inline-flex;
+    display: inline;
     font-family: "Poetsen One";
     font-size: 1.05em;
     color: #323232;
+    background-color: #fff9fb;
     text-decoration: none;
     border-radius: 10em;
     padding: 0.5em;
     margin: 0em 0.5em;
-    z-index: 2;
 }
 
 .menu_item_active{
@@ -58,8 +50,12 @@ h1 {
   border-radius: 10em;
   padding: 0.5em;
   margin: 0em 0.5em;
-  z-index: 2;
 }
+
+.menu_item:hover, .menu_item_active:hover{
+    color: #323232;
+    background-color: #f6a1b3;
+  }
 
 spline-viewer {
     display: block;
