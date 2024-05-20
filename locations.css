@@ -143,14 +143,62 @@ iframe{
     border-radius: 2em;
 }
 @media (max-width: 430px) {
-    .menus{
+    .maps{
         display: grid;
         grid-template-columns: 1fr;
+        width: 80vw;
+        margin-left: 5vw;
     }
-    #s1, #s2, #s3, #s4, #s5, #s6{
-        grid-column: auto;
+    #h11{
+        font-family: 'Poetsen one';
+        font-weight: bold;
+        display: inline-block;
+        width: 65vw;
+        height: auto;
+        background-color: #323232;
+        color: #f6a1b3;
+        margin-top: 1vh;
+        margin-left: 1vw;
     }
-    #s4{
-        grid-row: 3/4;
+    #p1{
+        font-family: 'Nunito';
+        font-weight: bold;
+        display: inline-block;
+        width: 50vw;
+        height: auto;
+        background-color: #323232;
+        color: #fcdd6d;
+        margin-top: 0.5vh;
+        margin-left: 1vw;
+    }
+    
+    #p2{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: small;
+        display: inline-block;
+        width: 50vw;
+        height: auto;
+        background-color: #323232;
+        color: #fff9fb;
+        margin-left: 1vw;
+    }
+    
+    #p3{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: x-large;
+        display: inline-block;
+        width: 50vw;
+        height: auto;
+        background-color: #323232;
+        color: #fff9fb;
+        margin-left: 1vw;
+    }
+    #ss2{
+        display: grid;
+        background-color: #323232;
+        border-radius: 2em;
+        padding-left: 1.5vw;
     }
   }
