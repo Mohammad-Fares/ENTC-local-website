@@ -6,7 +6,6 @@
     --dark: #06c105;
     --dark2: #c9a78d;
   }
-
 *{
     background-color: #f6a1b3;
     width: 100%;
@@ -20,7 +19,6 @@
     width: 45vw;
     height: 2vh;
     background-color: #fff9fb;
-    display: block;
     position: fixed;
     left: 25%;
     top: 0;
@@ -28,6 +26,14 @@
     border-radius: 50px;
     padding: 1em;
     margin-top: 0.5em;
+}
+
+.big{
+  background-color: #fff9fb;
+}
+
+.small{
+  display: none;
 }
 
 .menu_item{
@@ -78,7 +84,6 @@ h1{
     height: auto;
     background-color: #f6a1b3;
     color: #323232;
-    margin-left: 1vw;
     margin-top: 8vh;
     margin-bottom: 3vh;
 }
@@ -131,6 +136,59 @@ h1{
     grid-column: 3 / span 1;
 }
 @media (max-width: 430px) {
+    .small{
+      display: inline-block;
+      background-color: #fff9fb00;
+    }
+    
+    .big{
+      display: none;
+    }
+  
+    .nav{  
+      display: flex;
+      justify-content: center;
+      width: 45vw;
+      height: 2vh;
+      background-color: #fff9fb;
+      position: fixed;
+      left: 25%;
+      top: 0;
+      text-align: center;
+      border-radius: 2em;
+      padding: 1em;
+      margin-top: 0.5em;
+  }
+    .container{
+      display: none;
+      position: relative;
+      right: 1em;
+      background-color: #fff9fb;
+      width: 44.5vw;
+      height: auto;
+      border-radius: 0 0 1.5em 1.5em;
+      padding: 1vw 4vw;
+      padding-top: 3px;
+      margin-right: 100vw;
+      margin-top: 1.3vh;
+    }
+  
+    .menu_item{
+      display: block;
+      font-family: "Poetsen One";
+      font-size: 1.05em;
+      width: auto;
+      color: #323232;
+      background-color: #fff9fb; 
+      text-decoration: none;
+      border-radius: 2em;
+      padding: 1vw;
+      margin: 2vw;
+  }
+  .menu_item:hover, .menu_item_active:hover{
+    color: #323232;
+    background-color: #f6a1b3;
+  }
     #images {
         display: block; 
         width: 80vw; 

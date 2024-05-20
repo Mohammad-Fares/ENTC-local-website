@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="nav">
+        <div class="big">
         <a href="home.html" class="menu_item">Home</a>
         <a href="aboutus.html" class="menu_item">About us</a>
         <a href="menus.html" class="menu_item_active">Menus</a>
@@ -16,6 +17,22 @@
         <a href="FAQ.html" class="menu_item">FAQ</a>
         <a href="preorder.html" class="menu_item">Pre-order</a>
         <a href="team.html" class="menu_item">Our team</a>
+        </div>
+
+        <div class="small">
+            <a class="menu_item_active" onclick="menu()">Menus ▼</a>
+            
+            <div class="container">
+                <a href="home.html" class="menu_item">Home</a>
+                <a href="aboutus.html" class="menu_item">About us</a>
+                <a href="locations.html" class="menu_item">Locations</a>
+                <a href="gallery.html" class="menu_item">Gallery</a>
+                <a href="FAQ.html" class="menu_item">FAQ</a>
+                <a href="preorder.html" class="menu_item">Pre-order</a>
+                <a href="team.html" class="menu_item">Our team</a>
+            </div>
+        </div>
+        
     </div>
     
     <div class="menus">
@@ -29,11 +46,11 @@
         </div>
 
         <div id="s2">
-            <img src="home menu.png" id="img1"> 
+            <img src="home menu.png" loading="eager" id="img1"> 
         </div>
         
         <div id="s3">
-            <img src="san menu.png" id="img2">
+            <img src="san menu.png" loading="eager" id="img2">
         </div>
         
         <div id="s4">
@@ -55,10 +72,10 @@
             <p id="p1">Whether you're in the mood for something to warm you up or to cool you down, our range of hot and cold beverages has something to please every palate. Treat yourself to a delightful drink and complete your dining experience with a sip of perfection.</p>
         </div>
         <div id="s6">
-            <img src="bev menu.png" id="img3">
+            <img src="bev menu.png" loading="eager" id="img3">
         </div>
     </div>
 
-
+    <script src="home.js"></script>
 </body>
 </html>
