@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Signika:wght@300..700&family=Wellfleet&display=swap');
+:root {
+    --primary: #ffd43d;
+    --primary1: #f6a1b3;
+    --light: #323232;
+    --dark: #06c105;
+    --dark2: #c9a78d;
+  }
+*{
+    background-color: #f6a1b3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{  
+    display: block;
+    width: 45vw;
+    height: 2vh;
+    background-color: #fff9fb;
+    display: block;
+    position: fixed;
+    left: 25%;
+    top: 0;
+    text-align: center;
+    border-radius: 50px;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+.menu_item{
+    display: inline;
+    font-family: "Poetsen One";
+    font-size: 1.05em;
+    color: #323232;
+    background-color: #fff9fb;
+    text-decoration: none;
+    border-radius: 10em;
+    padding: 0.5em;
+    margin: 0em 0.5em;
+}
+
+.menu_item_active{
+  display: inline;
+  font-family: "Poetsen One";
+  font-size: 1.05em;
+  color: #fff9fb;
+  background-color: #323232;
+  text-decoration: none;
+  border-radius: 10em;
+  padding: 0.5em;
+  margin: 0em 0.5em;
+}
+
+.menu_item:hover, .menu_item_active:hover{
+    color: #323232;
+    background-color: #f6a1b3;
+  }
+
+#s2{
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+    height: 100vh;
+    width: 90vw;
+    margin-left: 4.5vw;
+    margin-top: 8vh;
+    align-items: center;
+}
+
+#h11{
+    font-family: 'Poetsen one';
+    font-weight: bold;
+    font-size: 2em;
+    display: inline-block;
+    width: 15vw;
+    height: auto;
+    background-color: #323232;
+    color: #f6a1b3;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+#p1{
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1.25em;
+    display: inline-block;
+    width: 18vw;
+    height: auto;
+    background-color: #323232;
+    color: #fcdd6d;
+    margin-top: 0.5vh;
+    margin-left: 1vw;
+}
+
+#p2{
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: small;
+    display: inline-block;
+    width: 15vw;
+    height: auto;
+    background-color: #323232;
+    color: #fff9fb;
+    margin-left: 1vw;
+}
+
+img{
+    width: 19.7vw;
+    border-radius: 1em;
+    border-color: #323232;
+    border-style: solid;
+}
+
+#ss2{
+    width: 20vw;
+    height: 70vh;
+    display: block;
+    background-color: #323232;
+    border-radius: 1vw;
+    border-color: #323232;
+    border-style: solid;
+    border-width: 0.3em;
+}
+
+@media (max-width: 430px) {
+    #s2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #ss2{
+        width: 90vw;
+        height: 80vh;
+        display: block;
+        background-color: #323232;
+        border-radius: 2vw;
+        border-color: #323232;
+        border-style: solid;
+        border-width: 0.3em;
+    }
+
+    img{
+        width: 85vw;
+        border-radius: 0.7em;
+        border-color: #323232;
+        border-style: solid;
+        margin-top: 1.5vw;
+        margin-left: 2vw;
+    }
+
+    #h11{
+        font-family: 'Poetsen one';
+        font-weight: bold;
+        font-size: 2em;
+        display: inline-block;
+        width: 50vw;
+        height: auto;
+        background-color: #323232;
+        color: #f6a1b3;
+        margin-top: 1vh;
+        margin-left: 1vw;
+    }
+    #p1{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: 1.25em;
+        display: inline-block;
+        width: 50vw;
+        height: auto;
+        background-color: #323232;
+        color: #fcdd6d;
+        margin-top: 0.5vh;
+        margin-left: 1vw;
+    }
+    
+    #p2{
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: small;
+        display: inline-block;
+        width: 75vw;
+        height: auto;
+        background-color: #323232;
+        color: #fff9fb;
+        margin-left: 1vw;
+    }
+  }
