@@ -196,7 +196,26 @@ option{
 
 #order{
     height: 10vh;
+    display: inline-block;
+    margin-bottom: 3vh;
+}
+
+#confirm{
+    font-size: 1.5em;
+    background-color: #323232;
+    color: #fff9fb;
+    width: 10vw;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    margin-top: 40vh;
+    cursor: pointer;
 }
 
 @media (max-width: 430px) {
+    #order{
+        margin-bottom: 2vh;
+    }
+    #confirm{
+        font-size: 1.25em;
+    }
   }
