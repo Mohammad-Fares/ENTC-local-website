@@ -64,19 +64,106 @@
     background-color: #f6a1b3;
   }
 
-spline-viewer {
-    display: block;
-    width: 100vw;
-    height: 95vh;
-    position: absolute;
-    margin-top: 10vh;
-    margin-left: 20vw;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    scale: 1;
+.s1{
+  margin-top: 8vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1vw;
+  height: 60vh;
+  width: 110vw;
+  margin-left: 5vw;
 }
+
+.ss1{
+  background-color: #323232;
+  width: 63.5vw;
+  border-radius: 1em;
+  border-color: #323232;
+  border-style: solid;
+  border-width: 0.3em;
+}
+
+.h11{
+  display: inline-block;
+  font-family: "Poetsen One";
+  font-size: 3em;
+  width: auto;
+  height: auto;
+  background-color: #323232;
+  color: #f6a1b3;
+  margin-left: 1vw;
+  margin-top: 1vh;
+}
+
+.h12{
+  font-family: 'Nunito';
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #323232;
+  color: #ffd43d;
+  padding-left: 1vw;
+}
+
+.p1{
+  font-family: 'Nunito';
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #323232;
+    color: #fff9fb;
+    padding-left: 1vw;
+    margin-bottom: 1.5vh;
+}
+
+.p2{
+  font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 2em;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #323232;
+    color: #f6a1b3;
+    padding-left: 1vw;
+    margin-bottom: 1.5vh;
+}
+
+.a1{
+  background-color: #32323200;
+}
+.g1{
   
+  border-radius: 1em;
+  border-color: #ffd1e0;
+  border-style: solid;
+  border-width: 0.3em;
+}
+.g2{
+  height: 76vh;
+  width: 25vw;
+  border-radius: 1em;
+  border-color: #323232;
+  border-style: solid;
+  border-width: 0.3em;
+}
+
+.sss1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60vw;
+  margin-left: 1.5vw;
+  grid-column-gap: 1vw;
+  background-color: #323232;
+}
+
+.sss2{
+  background-color: #32323200;
+  text-align: center;
+}
 @media (max-width: 430px) {
   .small{
     display: inline-block;
@@ -131,7 +218,27 @@ spline-viewer {
   color: #323232;
   background-color: #f6a1b3;
 }
-  spline-viewer {
-    display: none;
-  }
+.s1{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90vw;
+  margin-left: 4vw;
+}
+.ss1{
+  width: 90vw;
+}
+.ss2{
+  display: none;
+}
+
+.h11{
+  font-size: 2.5em;
+}
+
+.sss1{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80vw;
+  margin-left: 4vw;
+}
   }
